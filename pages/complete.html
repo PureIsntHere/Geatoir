@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="Pure's dumb website for dumb things" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/assets/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <title>One More Step…</title>
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <h1
+          id="gt"
+          style="font-size: clamp(2rem,4vw,4rem); font-weight: 300;"
+        >
+          Thank you for your support.
+        </h1>
+        <div style="text-align: center; margin-top: 1.5rem;">
+          <a
+            id="claim-btn"
+            href="#"
+            style="display:inline-block;padding:12px 24px;
+                   background:#5865F2;color:#fff;
+                   text-decoration:none;border-radius:4px;
+                   font-size:18px;"
+          >
+            Claim Your Role
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="socialsContainer">
+      <div id="socialsBar">
+        <i class="bi-github jiggle" onclick="OpenGithub()"></i>
+      </div>
+    </section>
+
+    <footer id="gt" style="font-size: clamp(1rem,1.3vh,100px);">
+      <center>Creating and Breaking since 2017.</center>
+    </footer>
+
+    <div
+      style="position: absolute; right: 0; bottom: 0;
+             font-size: clamp(.5rem,1.3vh,1rem); opacity: 30%;
+             padding-right: 10px;"
+    >
+      Made with 🩵 by pure
+    </div>
+
+    <script src="/assets/site.js"></script>
+    <script>
+      (function() {
+        const parts = window.location.pathname.split('/');
+        const userId = parts[2] || '';
+        const btn = document.getElementById('claim-btn');
+        if (userId) {
+          btn.href = '/claim/' + encodeURIComponent(userId);
+        }
+      })();
+    </script>
+  </body>
+</html>

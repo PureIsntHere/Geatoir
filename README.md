@@ -37,6 +37,8 @@ Make sure to replace each placeholder with your actual values.
 ## Usage
 
 ```bash
+node index.js
+or if you've created a start script
 npm start
 ```
 

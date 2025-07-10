@@ -57,4 +57,4 @@ pm2 start index.js --name geatoir
 
 ## License
 
-MIT
+[MIT](https://raw.githubusercontent.com/PureIsntHere/Geatoir/refs/heads/main/LICENSE)

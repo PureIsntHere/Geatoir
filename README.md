@@ -12,7 +12,7 @@ A simple Discord verification bot using Linkvertise to give out a role.
 ## Installation
 
 ```bash
-git clone https://github.com/yourusername/geatoir.git
+git clone https://github.com/PureIsntHere/geatoir.git
 cd geatoir
 npm install
 ```
